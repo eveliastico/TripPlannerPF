@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/logIn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white"
+    tools:context=".LogInActivity">
+    
+    <TextView
+        android:id="@+id/tvTitleLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Trip Planner"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tvIngresaLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitleLogIn"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:text="Ingresa"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tvSubTitleLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvIngresaLogIn"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Empieza a planear tus viajes"
+        android:textSize="16sp"
+        android:textColor="#888888" />
+
+    <EditText
+        android:id="@+id/etEmailLogIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSubTitleLogIn"
+        android:layout_marginTop="32dp"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textColor="@color/black" />
+    
+    <EditText
+        android:id="@+id/etPasswordLogIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etEmailLogIn"
+        android:layout_marginTop="16dp"
+        android:hint="Constraseña"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnLogIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPasswordLogIn"
+        android:layout_marginTop="24dp"
+        android:text="Iniciar Sesión"
+        android:backgroundTint="#FF4A4A"
+        android:textColor="@color/white"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/tvRegisterLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogIn"
+        android:layout_marginTop="16dp"
+        android:text="¿Aún no te registras?"
+        android:textSize="14sp"
+        android:textColor="#FF4A4A" />
+
+    <Button
+        android:id="@+id/btnRegisterScreen"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogIn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-25dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="147dp"
+        android:layout_toEndOf="@+id/tvRegisterLogIn"
+        android:backgroundTint="@color/white"
+        android:text="Registrate"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
